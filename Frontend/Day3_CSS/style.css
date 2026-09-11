@@ -1,0 +1,40 @@
+@font-face {
+    font-family: storm-gust;
+    src: url(./Storm\ Gust.otf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+/* Text style */
+/* h1{
+    color: rgb(221, 221, 183);
+    background-color: rgb(32, 72, 86);
+    font-size: 50px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 900;
+    font-style: italic;
+    text-align: center;
+    text-transform: capitalize;
+    font-family: 'Courier New', Courier, monospace;    
+
+} */
+
+div{
+    height: 200px;
+    width: 400px;
+    /* background-color: brown; */
+    /* background: lightblue; */
+    /* background-color:l/; */
+    /* background: linear-gradient(rgb(102, 102, 210),rgb(0, 0, 0),rgb(80, 78, 78)); */
+    background:radial-gradient( red,blue);
+    /* background: linear-gradient(to right bottom, red,blue); */
+
+}

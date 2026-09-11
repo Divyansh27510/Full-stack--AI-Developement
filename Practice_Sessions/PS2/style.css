@@ -1,0 +1,232 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'helvetica neue';
+}
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+section.outer{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 29% 29% 39%;
+    grid-template-rows: 39% 20% 10% 28%;
+    grid-template-areas: 
+    "left-top left-top right-top"
+    "left-center center right-bottom"
+    "left-center middle-bottom  right-bottom"
+    "left-bottom middle-bottom right-bottom"
+    ;
+    gap: 10px;
+
+}
+
+.box{
+    border-radius: 20px;
+}
+.first{
+    display: flex;
+    align-items: center;
+}
+.second{
+    display: flex;
+    align-items: center;
+}
+.left-top .left-top-img{
+    height: 100px;
+
+    
+    
+}
+.left-top h1{
+    color: #004D41;
+    font-size: 4rem;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.left-top{
+    display: flex;
+    background-color:#F4EEE5 ;
+    grid-area: left-top;
+    flex-direction: column;
+    align-items: center;
+    
+    
+
+}
+.right-top{
+    background-color: #004D41;
+    grid-area: right-top;
+    /* background-image: url("https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR6nqGxVPcM-Ch4ko3SXRLkL1TumZB-VTt4KMdWIZj2TpMj0-k2");
+    background-size: cover; */
+    overflow: hidden;
+}
+.right-top img{
+    height: 100%;
+    width: 100%;
+}
+.left-center{
+    background-color: #D60000;
+    grid-area: left-center;
+    padding: 24px;
+}
+.center{
+    background-color: #F4EEE5;
+    grid-area: center;
+}
+.right-bottom{
+    background-color: #F4EEE5;
+    grid-area: right-bottom;
+}
+.middle-bottom{
+    background-color: #004D41;
+    grid-area: middle-bottom;
+}
+.left-bottom{
+    background-color: #F4EEE5;
+    grid-area: left-bottom;
+}
+.left-center-inner{
+    height: 100%;
+    width: 100%;
+    background-color: #F4EEE5;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    justify-content: space-between;
+}
+.team img{
+    height: 50px;
+}
+.team{
+    display: flex;
+    width: 100%;
+    /* justify-content: space-between; */
+    gap: 10px;
+
+    align-items: center;
+    justify-content: center;
+}
+.left-center-inner .div2 h1 i{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #D60000;
+}
+.left-center-inner .div1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.left-center-inner .div1,.div3 h3{
+    color: #D60000;
+    font-size: 14px;
+}
+
+.center h1{
+    color: #D60000;
+    font-size: 3rem;
+
+}
+.center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.center img{
+    height: 100%;
+    width: 100%;
+}
+.right-bottom{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.right-bottom .div1 h1{
+    color: #D60000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3rem;
+}
+.right-bottom .div2 h3{
+    color: #D60000;
+}
+.right-bottom .div3 img{
+    height: 100%;
+    width: 100%;
+}
+.left-bottom{
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.left-bottom .div1{
+    display: flex;
+}
+.left-bottom .div1 .text{
+    background-color: #004D41;
+    padding: 10px;
+    border-radius: 10px;
+}
+.left-bottom .div1 img{
+    height: 40px;
+}
+.left-bottom .div2 img{
+    height: 40px;
+}
+.left-bottom .div2{
+    display: flex;
+}
+.left-bottom .div2 .text{
+    background-color: #004D41;
+    padding: 10px;
+    border-radius: 10px;
+}
+.left-bottom .text p{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.middle-bottom{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+}
+.middle-bottom .div1{
+    background-color: #010c0b;
+    padding: 10px;
+    border-radius: 10px;
+}
+.middle-bottom .div1 p{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.middle-bottom .div2{
+    display: flex;
+    gap: 10px;
+}
+.middle-bottom .div2 .div2-in{
+    height: 60px;
+    width: 60px;
+    background-color: #010c0b;
+    border-radius: 50%;
+}
+.middle-bottom .div2 .div2-in img{
+    height: 100%;
+    width: 100%;
+}
+.middle-bottom .div2 .div2-in.trans{
+    margin-left: -25px;
+}

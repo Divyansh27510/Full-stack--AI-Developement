@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/submit" name="login-form"
+    target="_blank" method="get" autocomplete="on" >
+    <input type="text" name="naam" id="name" placeholder="Enter You Name...">
+    <button>Submit</button>
+
+    <br>
+    <h1>SEO</h1>
+    <br>
+    <h3>Dialog tag</h3>
+    <dialog id="myDialog">
+        <h2>Hello!</h2>
+        <p>Are you sure?</p>
+        <button onclick="myDialog.close()">Close</button>
+    </dialog>
+
+    <button onclick="myDialog.showModal()">Open</button>
+
+    <br>
+    <h2>Meter tag</h2>
+    <label for="store">Storage:</label>
+    <meter id = "store" min="0" max="100" value="10">100</meter>
+    <meter min="0" max="100" value="20" low="30" high="70"></meter>
+
+
+    <br> <br>
+    <label>Choose your language:</label>
+    <!-- <form > -->
+        <input list="languages">
+
+        <datalist id="languages">
+            <option value="C++">
+            <option value="Python">
+            <option value="Java">
+            <option value="JavaScript">
+        </datalist>
+
+    <!-- </form> -->
+   
+</form>
+</body>
+</html>

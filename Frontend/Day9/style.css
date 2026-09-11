@@ -1,0 +1,281 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'helvetica neue';
+}
+html,
+body {
+    height: 100%;
+    width: 100%;
+    /* font-family: 'Courier New', Courier, monospace; */
+    /* font-size: 62.5%; */
+}
+/* nav{
+    color: rgba(255, 255, 255, 0.785);
+    background-color: #010101; 
+
+    height: 62px;
+    min-height: 62px;
+    display: flex;
+    align-items: center;
+    justify-content:space-between ;
+    padding: 0 6%;
+
+   
+    gap: 50px;
+    font-size: 13px;
+    font-weight: 200; 
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+nav a{
+    color: rgba(255, 255, 255, 0.794);
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.nav-log img{
+    height: 25px;
+    transform: translateX(-20px);
+}
+.nav-left .nav-links{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    
+}
+.nav-left{
+    display: flex;
+   
+    align-items: center;
+    gap: 25px;
+    justify-content: space-between;
+}
+.nav-store{
+    display: flex;
+    width: 25%;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+.profile{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: black;
+    border: 1px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+i{
+    font-size: 15px;
+}
+.menu i{
+    font-size: 25px;
+   
+}
+.menu{
+    display: none;
+}
+.more{
+    display: none;
+}
+@media (min-width:750px) and (max-width:950px){
+    a.hide{
+        display: none;
+    }
+    .more{
+        display: block;
+    }
+    
+}
+@media (max-width:750px) {
+    .nav-links{
+        display: none !important;
+    }
+    .head .nav-left{
+        padding-left: 30%;
+        
+    }
+    .nav-store{
+        width: 20%;
+        padding: 0 30px;
+    }
+    .store-hide{
+        display: none;
+    }
+    .menu{
+        display: block;
+        position: absolute;
+    }
+    .search{
+        display: block;
+    }
+} */
+
+
+
+/* .box {
+    height: 200px;
+    width: 200px;
+    background-color: rgb(67, 84, 34);
+    margin: 20px;
+
+    position: absolute;
+
+    animation-name: anime;
+    animation-duration: 3s;
+    animation-delay: 0.5s;
+}
+
+@keyframes anime {
+    0% {
+        top: 0;
+        left: 0;
+    }
+
+    25% {
+        right: 0;
+        top: 0;
+    }
+
+    50% {
+        right: 0;
+        bottom: 0;
+    }
+
+    75% {
+        left: 0;
+        bottom: 0;
+    }
+
+    100% {
+        top: 50%;
+        left: 50%;
+    }
+} */
+
+/* .box2 {
+    height: 200px;
+    width: 200px;
+    background-color: rgb(67, 84, 34);
+    position: absolute;
+
+    animation-name: anime;
+    animation-duration: 5s;
+    animation-iteration-count: 4;
+} */
+/* .box2 { */
+    /* height: 200px;
+    width: 200px; */
+    /* background-color: rgb(198, 204, 209); */
+    /* position: absolute;
+    animation-name: anime;
+    animation-duration: 5s;
+    animation-iteration-count: 4;
+    animation-direction: alternate;
+
+    
+}
+.box2 img{
+    height: 200px;
+}
+
+@keyframes anime {
+    0%{
+        left: 0%;
+        top: 0%;
+    }
+
+    25%{
+        left: 75%;
+        top: 0%;
+        rotate: 360deg;
+    }
+
+    50%{
+        left: 75%;
+        top: 70%;
+    }
+
+    75%{
+        left: 0%;
+        top: 70%;
+    }
+
+    100%{
+        left: 0%;
+        top: 0%;
+    }
+} */
+
+/* .box{
+    height: 50px;
+    position: absolute;
+
+    background-color: rgb(97, 89, 26);
+    display: flex;
+    
+}
+h3{
+    width: 100px;
+    color: rgb(79, 4, 4);
+    background-color: rgb(210, 200, 183);
+    padding: 10px;
+    flex-shrink: 0;
+    animation-name: anime;
+    animation-duration: 3s;
+    animation-delay: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes anime {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+} */
+
+.box{
+    
+    background-color: rgb(22, 82, 101);
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    
+    /* gap: 10px; */
+    overflow: hidden;
+}
+.inner{
+    /* background-color: rgb(218, 13, 13); */
+    color: black;
+
+    display: flex; 
+    /* position: absolute; */
+    animation-name: anime;
+    animation-duration: 7s;
+    /* animation-delay: 1s; */
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+   
+    padding: 5px;
+    
+}
+h3{
+    color: black;
+    padding: 10px;
+    /* background-color: aliceblue; */
+}
+@keyframes anime {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
