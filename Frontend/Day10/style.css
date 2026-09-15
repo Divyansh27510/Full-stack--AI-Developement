@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'helvetica neue';
+}
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+h1{
+    font-size: 4rem;
+
+}
+/* h1::after{
+    content: "After";
+    color: royalblue;
+    font-size: 2rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+h1::before{
+    content: "I am in before";
+    color: olive;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 2rem;
+} */
+/* after and before is a psueodo Element */
+/* .box{
+    height: 200px;
+    width: 200px;
+    background-color: royalblue;
+    text-align: center;
+    margin: 2rem ;
+}
+.box::after{
+    content: " After";
+    color: yellowgreen;
+}
+.box::before{
+    content: "Before ";
+    color: white;
+} */
+
+
+ /* UNDERLINE ANIMATION
+.nav{
+    width: 100%;
+    height: 10rem;
+    background-color: olive;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+h3{
+    font-size: 4rem;
+    position: relative;
+}
+h3::after{
+    content: "";
+    width: 0%;
+    height: 3px;
+    background-color: rgb(250, 247, 247);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: all ease 0.3s;
+    transform: translateX(-50%);
+    left: 50%;
+
+}
+h3:hover::after{
+    width: 100%;
+} */
+
+
+
+/*------- BUTTON ANIMATION------ */
+
+
+
+
+
+/* button{
+    margin: 200px;
+    padding: 1rem 2rem;
+    background-color: transparent;
+    border: 2px solid black;
+    border-radius: 1rem;
+    position: relative;
+    overflow: hidden;
+
+}
+button::after{
+    content: "";
+    height: 100%;
+    width: 0;
+    background-color: royalblue;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(50%,50%) scale(0);
+    z-index: -1;
+    transition: all ease 0.3s;
+}
+button:hover::after{
+    transform: translate(50%,50%) scale(5);
+    width: 100%;
+}
+button:hover{
+    color: white;
+} */
+body{
+    padding: 100px;
+}
+
+.tooltip { 
+    
+   
+    position: relative; }
+
+.tooltip:hover::after {
+  content: attr(data-tip);
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #111;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 4px;
+  white-space: nowrap;
+}

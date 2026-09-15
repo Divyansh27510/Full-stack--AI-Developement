@@ -1,0 +1,509 @@
+ @font-face {
+    font-family: Reckless;
+    src: url(./fonts/RecklessCondensedS-TRIAL-Book.woff);
+}
+@font-face {
+    font-family: Midnight;
+    src: url(./fonts/midnight-sans-rd-12-medium-trial.otf);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-family: Reckless;
+}
+
+.section-1{
+    width: 100%;
+    height: 95vh;
+    
+    background-image: url(https://www.twoleavestea.com/cdn/shop/files/matcha_pour_mobile.webp?v=1785857048&width=720);
+    background-size: cover;
+    /* background-position: center; */
+
+
+}
+main{
+    width: 100%;
+    min-height: 100%;
+    
+    padding: 1rem 0;
+}
+.offer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2vh;
+    color: white;
+    font-size: 0.8rem;
+    font-family: "Roboto", sans-serif;
+    background-color: #2A2857;
+    position: fixed;
+    z-index: 1000;
+    padding: 2vh 0;
+}
+nav{
+
+    width: 100%;
+    background-color:#FFFEFB;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 1.2rem;
+    border: 1px solid black;
+   
+    position: fixed;
+    top:calc(2vh + 2vh);
+    
+    transition: all 3s ease;
+    z-index: 99999;
+    
+
+}
+
+nav .nav-1{
+    display: flex;
+    gap: 1rem;
+    font-size: 1.5rem;
+    font-weight: 300;
+    
+    width: 33%;
+    display: none;
+    
+}
+nav i{
+    font-size: 2rem;
+}
+nav .nav-2{
+    width: 10vh;
+    
+}
+
+nav  .nav-2 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+nav .nav-3{
+    display: flex;
+    gap: 1vw;
+    align-items: center;
+    justify-content: end;
+    font-family: "Roboto", sans-serif;
+    font-size: 0.75rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 500;
+    
+}
+nav .nav-3 p{
+    display: none;
+}
+nav .nav-3 i{
+    font-size: 2rem;
+    font-weight: 100;
+
+    
+}
+nav .nav-3 svg{
+    height: minmax(4vh,4vw);
+}
+.ri-arrow-down-wide-line{
+    background-color:rgba(135, 207, 235, 0.32);
+
+    border-radius: 50%;
+    border: 1px solid black;
+}
+
+.bg-text{
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100vw;
+    color: white;
+    
+}
+section.section-1 main .bg-text h1{
+    font-size: clamp(3rem,15vw,4rem);
+    font-weight: 200;
+    /* text-align: center; */
+} 
+section.section-1 main .bg-text p{
+    font-size: clamp(0.8rem,5vw,1.1rem);
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    max-width: 100%;
+    
+} 
+main{
+    display: flex;
+    /* align-items: center; */
+    flex-direction: column;
+    justify-content: end;
+}
+.bg-text button{
+    font-family: "Roboto", sans-serif;
+    font-size: clamp(1rem,1.2vh,1.5rem);
+    color: white;
+    width: 100%;
+    background-color: #2A2857;
+    border: 1px solid black;
+    padding: 1rem 2rem;
+    border-radius: 1.5rem;
+    cursor: pointer;
+}
+@media (min-width:750px) {
+    
+}
+@media (min-width:1020px) {
+    /* nav{
+
+        width: 100%;
+        background-color:#FFFEFB;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem 1.2rem;
+        border: 1px solid black;
+    
+        position: fixed;
+        top:calc(2vh + 2vh);
+        
+        transition: all 3s ease;
+        
+
+    } */
+
+    nav .nav-1{
+        display: flex;
+        gap: 1rem;
+        font-size: 1.5rem;
+        font-weight: 300;
+        text-align: center;
+        width: 33%;
+        /* display: block; */
+        
+    }
+    nav .nav-3 p{
+        display: block;
+    }
+    nav i.ri-menu-line{
+        display: none;
+    }
+    nav .nav-3{
+        display: flex;
+        gap: 1vw;
+        align-items: center;
+        justify-content: end;
+        font-family: "Roboto", sans-serif;
+        font-size: 0.75rem;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        font-weight: 500;
+        
+    }
+    .bg-text{
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        width: 50vw;
+        color: white;
+        
+    }
+    .bg-text button{
+        font-family: "Roboto", sans-serif;
+        font-size: clamp(1rem,1.2vh,1.5rem);
+        color: white;
+        width: 40%;
+        background-color: #2A2857;
+        border: 1px solid black;
+        padding: 1rem 2rem;
+        border-radius: 1.5rem;
+        cursor: pointer;
+    }
+    .ri-arrow-down-wide-line{
+        background-color:rgba(135, 207, 235, 0.32);
+        height: 1rem;
+        width: 1rem;
+        font-size: 1rem;
+        border-radius: 50%;
+        border: 1px solid black;
+    }
+    nav .nav-2{
+        width: 6vw;
+        height: 100%;
+        
+    }
+
+    nav  .nav-2 img{
+        width: 100%;
+        height: 100%;
+        
+
+    }
+    .section-1{
+        background-image: url(https://www.twoleavestea.com/cdn/shop/files/matcha_pour.webp?v=1785856852&width=1280);
+        background-size: cover;
+    }
+    
+}
+
+
+/* --------SECTION 2------ */
+
+
+.section2{
+    width: 100%;
+    height: 110vh;
+    background-color:rebeccapurple;
+}
+.section2 .sec2-quotes{
+    
+    
+    background-color: beige;
+    width: 100%;
+    height: 23%;
+    padding: 5rem 0 3rem 0;
+}
+.section2 .sec2-quotes h1{
+    font-weight: 300;
+    text-align: center;
+    width: fit-content;
+}
+.section2 .sec2-bestsellerrs{
+    
+    background-color: beige;
+    width: 100%;
+    height: 10%;
+    padding: 0 1rem;
+    
+}
+.sec2-bestsellerrs h1{
+    font-weight: 600;
+    font-family:Midnight;
+    width: fit-content;
+    padding: 0 0.8rem;
+    font-size: clamp(2rem,4vh,3rem);
+    border-radius: 0.5rem;
+    background-color:#DAAEEA ;
+    border: 1px solid black;
+    rotate: -2deg;
+}
+.section2 .sec2-cards{
+    width: 100%;
+    height: 52%;
+    background-color: beige;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    gap: clamp(1.5rem,2vh,2rem);
+    overflow-x: auto;
+
+}
+.sec2-cards::-webkit-scrollbar{
+    display: none;
+}
+.sec2-cards .cards{
+    
+    height: 100%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-shrink: 0;
+    
+    
+}
+.sec2-cards .cards .card-img{
+    height: 80%;
+    width: 100%;
+    background-color: #C1ED91;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid black;
+    border-radius: 1rem;
+    padding: 1rem;
+    
+
+    /* padding-bottom: 1rem; */
+}
+.sec2-cards .card-img .img{
+   height: 60%;
+   width: 100%;
+    
+
+    
+}
+.sec2-cards .card-img .img img{
+   height: 100%;
+   width: 100%;
+   transition: all ease 0.3s;
+    
+
+    
+}
+.sec2-cards .card-img .img img:hover{
+    transform: scale(1.1);
+}
+.sec2-cards .cards .card-img .card-top{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* padding:1rem ; */
+    /* position: absolute; */
+    
+}
+.sec2-cards .cards .card-img .card-top button{
+    padding: 0.5rem 1rem;
+    font-family: Midnight;
+    font-weight: 700;
+    font-size: clamp(1.5rem,5vw,2rem);
+    background-color: white;
+    border-radius: 1rem;
+}
+.sec2-cards .cards .card-img .card-top .card-star{
+    font-size: clamp(1rem,2vw,1.5rem);
+}
+.sec2-cards .cards .card-img .bottom{
+    width: 100%;
+    height: 20%;
+    /* background-color: red; */
+    padding: auto;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    
+}
+.sec2-cards .cards .card-img .card-add{
+    width:30%;
+    height: 100%;
+    display: flex;
+    background-color: white;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 1rem;
+    
+}
+.sec2-cards .cards .card-img .card-add p{
+    font-size: clamp(1.5rem,2vw,2rem);
+}
+.sec2-cards .cards .card-img .card-bottom .add{
+    height: 100%;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 1rem;
+}
+@font-face {
+    font-family: figtree;
+    src: url(./fonts/figtree_n4.3c0838aba1701047e60be6a99a1b0a40ce9b8419.woff2);
+}
+.section2 .card-topic{
+    font-family:Reckless ;
+    font-size: clamp(1.5rem,2vw,2rem);
+}
+.section2 .card-price{
+    font-family: figtree;
+    font-size: clamp(1rem,1.5vw,1.5rem);
+    opacity: 0.9;
+}
+.section2 .card-about{
+    font-family: figtree;
+    font-size: clamp(0.8rem,1.5vw,1.2rem);
+    opacity: 0.8;
+}
+.sec2-last{
+    background-color: #FBF9EB;
+    height: 15%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sec2-last button{
+    padding: 1rem 3rem;
+    background-color: #2A2857;
+    color: white;
+    font-size: clamp(1.3rem,2vw,2rem);
+    font-family: figtree;
+    border-radius: 2rem;
+}
+
+
+@media (min-width: 720px) {
+    .section2 .sec2-quotes{
+    
+    background-color: beige;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 23%;
+        
+    }
+    .section2 .sec2-quotes div{
+        width: 50%;
+    }
+    .section2 .sec2-quotes div h1{
+        font-size: clamp(3rem,2vw,5rem);
+    }
+    .sec2-cards .cards{
+        width: 35%;
+        height: 70%;
+        gap: 20px;
+    }
+    .sec2-cards .cards .card-img 
+    .bottom .card-add p{
+        
+        
+        font-size: 1rem;
+    }
+    
+}
+@media (min-width: 1020px) {
+    .section2{
+        min-height: 160vh;
+    }
+    .sec2-cards .cards{
+        width: 30%;
+        height: 80%;
+    }
+    .sec2-cards .cards .card-img 
+    .bottom .card-add p{
+        
+        font-size: 1.5rem;
+    }
+    .sec2-cards .cards .card-img .card-top button{
+        padding: 0.5rem 1rem;
+        font-family: Midnight;
+        font-weight: 500;
+        font-size: clamp(1.5rem,2vw,2rem);
+        letter-spacing: 1px;
+        background-color: white;
+        border-radius: 1rem;
+    }
+    .sec2-cards .cards{
+        gap: 1.5rem;
+    }
+}

@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  width: 100%;
+  overflow-x: hidden; /* removes horizontal scrollbar, kept OFF body so sticky still works */
+}
+
+body {
+  width: 100%;
+  background-color: #e0e0e0; /* viewport / screen background */
+}
+
+/* MAIN PAGE - 90vh/95vh, full width */
+.main-page {
+  width: 100%;
+  height: 90vh;
+  background-color: #a3d5ff; /* light blue */
+  position: relative;
+  padding: 20px; /* padding for navbar to sit inside */
+}
+
+/* TOP STRIP - full width, no gap from top, small height */
+.top-strip {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5vh;
+  background-color: #ff8c69; /* orange/salmon */
+}
+
+/* NAVBAR - now a SIBLING of main-page (not a child), so it's not
+   confined by main-page's 90vh height. Negative margin-top pulls it
+   back up to sit visually where it was (right below the 5vh strip).
+   "20px" left/right margin recreates the "padding from sides" look. */
+.navbar {
+  position: sticky;
+  top: 0;
+  margin: -83vh 20px 0 20px; /* -83vh = 5vh (strip) + 2vh gap, pulled up from below main-page */
+  height: 8vh;
+  background-color: #77dd77; /* green */
+  z-index: 10; /* stays above the sections below while scrolling */
+}
+
+/* CONTENT SECTIONS below main page - sky blue shades */
+.section {
+  width: 100%;
+  height: 100vh;
+}
+
+.section-1 { background-color: #87CEEB; } /* sky blue */
+.section-2 { background-color: #6FB8DE; } /* slightly deeper */
+.section-3 { background-color: #87CEEB; }
+.section-4 { background-color: #6FB8DE; }
+.section-5 { background-color: #87CEEB; }
