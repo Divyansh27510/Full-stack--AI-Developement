@@ -55,4 +55,13 @@
 // console.log(user)
 
 
-prompt("This is Demo")
+// prompt("This is Demo")
+// console.log("hello" && "world");  // "world"
+// console.log(0 && "hello");        // 0
+// console.log("" || "default");     // "default"
+// console.log("user" || "guest");   // "user"
+// console.log(isNaN("hello"));   // true
+// console.log(Number.isInteger(5));   // true
+// console.log(Number.isInteger(5.5)); // false
+// console.warn("Divyansh Singh")
+// console.error("Divyansh Singh")

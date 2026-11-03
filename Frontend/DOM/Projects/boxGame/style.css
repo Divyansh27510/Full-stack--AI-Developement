@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'helvetica neue';
+}
+html,
+body {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.637);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+
+main{
+    position: relative;
+    display: flex;
+    height: 60%;
+    width: 40%;
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.timeScore{
+    width: 40%;
+    display: flex;
+    /* background-color: red; */
+    justify-content: space-between;
+    padding: 10px;
+
+}
+
+button{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+
+}
+
+.gameOver{
+    height: 100%;
+    width: 100%;
+    font-size: 50px;
+    position: absolute;
+
+    background-color: rgba(0, 0, 0, 0.845);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+.box{
+    height: 15%;
+    width: 25%;
+    background-color: white;
+    position: absolute;
+    border-radius: 10px;
+    
+    
+}

@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'helvetica neue';
+}
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+body{
+    background-color: rgba(0, 0, 0, 0.816);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+/* input{
+    color: black;
+} */
+
+main{
+    height: 50%;
+    width: 80%;
+    background-color: rgb(126, 44, 44);
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+.box{
+    height: 20%;
+    width: 20%;
+    background-color: blanchedalmond;
+    border-radius: 30px;
+}
