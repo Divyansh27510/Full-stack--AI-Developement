@@ -4,6 +4,7 @@ import ProductCard from "./ProductCard";
 import products from "../data/product.json";
 // import { useState } from "react";
 // import ProductCard from "./ProductCard";
+<<<<<<< HEAD
 import AddProduct from "./AddProduct"
 
 
@@ -59,6 +60,17 @@ const MainContent = ({searchTerm,selectedCategory}) => {
   );
 }
 
+=======
+
+const MainContent = () => {
+  const [productList, setProductList] = useState(products);
+  const deleteProduct = (id) => {
+    const updatedProducts = productList.filter((elem) => {
+      return elem.id !== id;
+    });
+    setProductList(updatedProducts);
+  };
+>>>>>>> a66c9d6a5f18f4d7aa145990e4e876b6711dd15e
   return (
     <main className="flex-1 p-8 ">
       <div className="flex justify-between items-center mb-8">
@@ -68,6 +80,7 @@ const MainContent = ({searchTerm,selectedCategory}) => {
             Explore our collections of products.
           </p>
         </div>
+<<<<<<< HEAD
         <button 
         onClick={()=>setShowAddForm(!showAddForm)}
         className="bg-violet-600 text-white px-5 py-2 rounded-lg">
@@ -84,6 +97,19 @@ const MainContent = ({searchTerm,selectedCategory}) => {
           );
         })} */}
         {content}
+=======
+        <button className="bg-violet-600 text-white px-5 py-2 rounded-lg">
+          {" "}
+          + Add Product
+        </button>
+      </div>
+      <div className="mt-8 grid grid-cols-4 gap-6">
+        {productList.map((prod) => {
+          return (
+            <ProductCard key={prod.id} product={prod} del={deleteProduct} />
+          );
+        })}
+>>>>>>> a66c9d6a5f18f4d7aa145990e4e876b6711dd15e
       </div>
     </main>
   );

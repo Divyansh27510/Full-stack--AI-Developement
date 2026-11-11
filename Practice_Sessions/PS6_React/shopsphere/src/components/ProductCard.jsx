@@ -5,7 +5,11 @@ const ProductCard = ({product,del}) => {
     <div className='bg-white border border-slate-200 rounded-xl p-4'>
       <img
         src={product.image}
+<<<<<<< HEAD
         alt={product.title}
+=======
+        alt="{product.title}"
+>>>>>>> a66c9d6a5f18f4d7aa145990e4e876b6711dd15e
         className="w-full h-48 object-contain"
       />
       <h3 className='text-lg font-semibold mt-4'>{product.title}</h3>
