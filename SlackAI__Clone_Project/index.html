@@ -1,0 +1,373 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <main class="homepage">
+      <nav>
+        <div class="nav_bar">
+          <div class="nav_left">
+            <div class="nav_logo">
+              <a href="#">
+                <img src="./Slack_logo.png" alt="Logo" />
+              </a>
+            </div>
+            <div class="nav_links">
+              <div class="nav_left_link">
+                <a href="#" class="products">Products </a>
+                <i class="fa-solid fa-chevron-down"></i>
+              </div>
+              <div class="nav_left_link">
+                <a href="#" class="solutions">Solutions </a>
+                <i class="fa-solid fa-chevron-down"></i>
+              </div>
+              <div class="nav_left_link">
+                <a href="#">Enterprise</a>
+              </div>
+              <div class="nav_left_link">
+                <a href="#" class="resources">Resources </a>
+                <i class="fa-solid fa-chevron-down"></i>
+              </div>
+              <div class="nav_left_link">
+                <a href="#">Pricing</a>
+              </div>
+            </div>
+          </div>
+          <div class="nav_right">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <a href="#" id="sign_in"> Sign in </a>
+            <button id="nav_request_btn">Request a Demo</button>
+            <button id="nav_getStart_btn">Get Started</button>
+            <div class="menu-bar">
+              <i class="fa-solid fa-bars"></i>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <section class="hero">
+        <div class="hero_content">
+          <div class="hero-heading">
+            <h1>All your people and AI agents working together</h1>
+            <p>
+              Slack connects your team. Slackbot multiplies what they can do.
+            </p>
+          </div>
+          <div class="hero-buttons">
+            <div class="hero-getStart">
+              <button>GET STARTED</button>
+            </div>
+            <div class="hero-find-your-subscription">
+              <button>
+                FIND YOUR SUBSCRIPTION
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+
+          <div class="hero-brands">
+            <div>
+              <p id="trusted-by-brands">Trusted by top teams</p>
+              <div class="gm brand">
+                <img src="./logo-gm-small@2x.png" alt="" />
+              </div>
+              <div class="open-ai brand">
+                <img src="./logo-openai-small@2x.png" alt="" />
+              </div>
+              <div class="gola brand">
+                <img src="./logo-target-small@2x.png" alt="" />
+              </div>
+              <div class="paramount brand">
+                <img src="./logo-paramount-small@2x.png" alt="" />
+              </div>
+              <div class="stripe brand">
+                <img src="./logo-stripe-small@2x.png" alt="" />
+              </div>
+              <div class="ibm brand">
+                <img src="./logo-ibm-small@2x.png" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="ask-slackbot">
+            <button>Ask Slackbot</button>
+          </div>
+
+          <div class="video">
+            <video
+              src="https://a.slack-edge.com/56a9198/marketing/img/homepage/revamped-25/hero/video-slackbot-big-mode.IN@2x.mp4"
+              autoplay
+              muted
+              loop
+              playsinline
+              preload="metadata"
+            ></video>
+            <div class="video_controls">
+              <button id="video_btn">
+                <i class="fa-solid fa-pause"></i>
+              </button>
+
+              <span id="video_status">Pause animation</span>
+            </div>
+          </div>
+        </div>
+        <div class="hero-btn">
+          <div class="hero-btn-sections">
+            <div class="upper-btn">
+              <button>
+                Ask Slackbot
+                <img
+                  src="https://a.slack-edge.com/7f46083/marketing/img/homepage/revamped-25/hero/icons/icon-slackbot.svg"
+                  alt=""
+                />
+              </button>
+              <button>
+                Close deals
+                <img
+                  src="https://a.slack-edge.com/6fd6c11/marketing/img/homepage/revamped-25/hero/icons/icon-list.svg"
+                  alt=""
+                />
+              </button>
+              <button>
+                Plan launches
+                <img
+                  src="	https://a.slack-edge.com/6fd6c11/marketing/img/homepage/revamped-25/hero/icons/icon-pencil.svg"
+                  alt=""
+                />
+              </button>
+            </div>
+            <div class="lower-btn">
+              <button>
+                Chat with clients
+                <img
+                  src="	https://a.slack-edge.com/6fd6c11/marketing/img/homepage/revamped-25/hero/icons/icon-chat.svg"
+                  alt=""
+                />
+              </button>
+              <button>
+                Automate tasks
+                <img
+                  src="	https://a.slack-edge.com/6fd6c11/marketing/img/homepage/revamped-25/hero/icons/icon-zap.svg"
+                  alt=""
+                />
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="reimagine-section">
+        <div class="reimagine-div">
+          <!-- Heading -->
+          <div class="reimagine-heading">
+            <h1>Reimagine what’s possible with AI and agents</h1>
+
+            <p>
+              AI in Slack delivers action, not just answers. It’s tapped into
+              the full context of your business, making every connected app and
+              agent smarter in the process.
+            </p>
+          </div>
+
+          <!-- Main Content -->
+          <div class="reimagine-video-section">
+            <!-- Left Side -->
+            <div class="reimagine-text">
+              <div class="reimagine-item">
+                <p>Turn data into action with Slackforce Surfaces</p>
+                <span class="new-badge">New</span>
+              </div>
+
+              <div class="reimagine-item">
+                <p>Automate tasks using Slackbot skills</p>
+                <span class="new-badge">New</span>
+              </div>
+
+              <div class="reimagine-item">
+                <p>Build together in channels with Slack Code</p>
+                <span class="new-badge">New</span>
+              </div>
+
+              <div class="reimagine-item">
+                <p>Track and update sales pipelines with Slack CRM</p>
+              </div>
+
+              <div class="reimagine-item active">
+                <p>Get fast answers with Claude</p>
+              </div>
+            </div>
+
+            <!-- Right Side -->
+            <div class="reimagine-video">
+              <video
+                id="reimagine_video"
+                src="https://a.slack-edge.com/61d31f7/marketing/img/homepage/revamped-25/dark-component/uis/claude-AI.IN@2x.mp4"
+                autoplay
+                muted
+                loop
+                playsinline
+                preload="metadata"
+              ></video>
+
+              <!-- Video Controls -->
+              <div class="reimagine-video-controls">
+                <button
+                  id="reimagine_video_btn"
+                  type="button"
+                  aria-label="Pause animation"
+                >
+                  <i class="fa-solid fa-pause"></i>
+                </button>
+
+                <span id="reimagine_video_status"> Pause animation </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="updates-container">
+          <div class="heading-card-cont">
+            <div class="updates-heading">
+              <h2>What’s new in Slack</h2>
+              <button>
+                See all Updates <i class="fa-solid fa-arrow-right-long"></i>
+              </button>
+            </div>
+
+            <div class="updates-cards-container">
+              <!-- CARD 1 -->
+              <div class="update-card">
+                <div class="update-img">
+                  <img
+                    src="https://d34u8crftukxnk.cloudfront.net/slackpress/prod/sites/6/slack-code.png"
+                    alt="Slack Code"
+                  />
+                </div>
+                <div class="card-text">
+                  <button>New Feature</button>
+                  <h3>Slack Code</h3>
+                  <p>
+                    Coding agents can now work with your whole team, not just
+                    you.
+                  </p>
+                </div>
+              </div>
+
+              <!-- CARD 2 -->
+              <div class="update-card">
+                <div class="update-img">
+                  <img
+                    src="https://d34u8crftukxnk.cloudfront.net/slackpress/prod/sites/6/deep-research.png"
+                    alt="Slackbot Deep Research"
+                  />
+                </div>
+                <div class="card-text">
+                  <button>New Feature</button>
+                  <h3>Slackbot Deep Research</h3>
+                  <p>
+                    Slackbot can now dig deep on open-ended questions, not just
+                    quick ones.
+                  </p>
+                </div>
+              </div>
+
+              <!-- CARD 3 -->
+              <div class="update-card">
+                <div class="update-img">
+                  <img
+                    src="https://d34u8crftukxnk.cloudfront.net/slackpress/prod/sites/6/salesforce-approvals.png"
+                    alt="Salesforce approvals in Slack"
+                  />
+                </div>
+                <div class="card-text">
+                  <button>New Feature</button>
+                  <h3>Salesforce approvals in Slack</h3>
+                  <p>
+                    Salesforce approvals can now be routed straight into Slack.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <section class="click-links">
+      <div class="product-overlay">
+        <div class="product-class">
+          <h1>Product Section is Opened</h1>
+        </div>
+      </div>
+      <div class="solutions-overlay">
+        <div class="solution-class">
+          <h1>Solution Overlay is Opened</h1>
+        </div>
+      </div>
+      <div class="resource-overlay">
+        <div class="resource-class">
+          <h1>Resources Overlay is Opened</h1>
+        </div>
+      </div>
+      <!-- Sign In Overlay -->
+      <div class="sign-in-overlay">
+        <div class="sign-in-box">
+            <div class="sign-in-text">
+                <h3>Welcome Back</h3>
+                <h4>Please Enter Your Credentials for Login and continue to your workspace</h4>
+            </div>
+            <div class="sign-in-form">
+                <form>
+                    <div>
+                        <label for="username">Username:</label>
+                        <input type="text" id="username" placeholder="Enter Your username" required>
+                    </div>
+
+                    <div>
+                        <label for="email">Email Address:</label>
+                        <input type="email" id="email" name="email"
+                        placeholder="Enter your Email" required>
+                    </div>
+
+                    <div>
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password" required
+                        placeholder="Enter your Password ">
+                    </div>
+
+                    <div class="checkbox">
+                        <div>
+                            <label for="checkbox">Remeber me</label>
+                            <input type="checkbox"  id="checkbox">
+                        </div>
+
+                        <a href="#">Forgot Password?</a>
+                    </div>
+
+
+                    
+
+                    <button>Sign in</button>
+
+                    <!-- <hr> -->
+                    <button>Continue with Google</button>
+                    <button>Continue with Github</button>
+
+                    <div class="no-account">
+                        <p>Dont have an account? 
+                            <a href="">Sign up</a>
+                        </p>
+                    </div>
+                </form>
+            </div>
+        </div>
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
